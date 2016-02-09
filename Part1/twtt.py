@@ -31,5 +31,5 @@ def main(argv):
     output_file.close()
 
 if __name__ == "__main__":
-    #main(["data/testing.csv",5, "data/Testing_Results.txt"]) #hardcoded arguements
+    #main(["data/training.csv",5, "data/results.txt"]) #hardcoded arguements
     main(sys.argv[1:]) # command line arguements 
