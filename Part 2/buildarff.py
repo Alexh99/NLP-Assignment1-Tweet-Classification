@@ -47,5 +47,5 @@ def main(argv):
     output_file.close()
 
 if __name__ == "__main__":
-    main(["data/Training_Results.txt","data/feature_results.arff"]) #hardcoded arguements
+    main(["data/Testing_Results.txt","data/feature_results.arff"]) #hardcoded arguements
     #main(sys.argv[1:]) # command line arguements 

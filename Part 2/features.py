@@ -23,7 +23,7 @@ COUNT_CONJUCTIONS = open("Wordlists/Wordlists/Conjunct",'r').readlines()
 for i in range (len(COUNT_CONJUCTIONS)):
     COUNT_CONJUCTIONS[i] = " " + COUNT_CONJUCTIONS[i].strip() +"/"
     
-COUNT_PAST_TENSE_VERBS = []
+COUNT_PAST_TENSE_VERBS = ["/VBD ","/VBN "]
 COUNT_FUTURE_TENSE_VERBS = ["'/POS ll","will","gonna","going/VBG to/TO .*/VB"]
 COUNT_COMMAS = [","]
 COUNT_COLONS_SEMICOLONS = [":",";"]
