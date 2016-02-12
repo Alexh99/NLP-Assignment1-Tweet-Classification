@@ -25,10 +25,10 @@ for i in range (len(COUNT_CONJUCTIONS)):
     
 COUNT_PAST_TENSE_VERBS = ["/VBD ","/VBN "]
 COUNT_FUTURE_TENSE_VERBS = ["'/POS ll","will","gonna","going/VBG to/TO .*/VB"]
-COUNT_COMMAS = [","]
-COUNT_COLONS_SEMICOLONS = [":",";"]
+COUNT_COMMAS = [" ,"]
+COUNT_COLONS_SEMICOLONS = [" :"," ;"]
 COUNT_DASHES = ["-"]
-COUNT_PARENTHESES = ["\(","\)","\[","\]","{","}"]
+COUNT_PARENTHESES = [" \("," \)"," \["," \]"," {"," }"]
 COUNT_ELLIPSES = ["\.\.\."]
 COUNT_COMMON_NOUNS = ["/NN ","/NNS "]
 COUNT_PROPER_NOUNS = ["/NNP ","/NNPS "]
@@ -46,7 +46,7 @@ FEATURES = [ [COUNT_FIRST_PERSON,True],
              [COUNT_SECOND_PERSON,True],
              [COUNT_THIRD_PERSON,True],
              [COUNT_CONJUCTIONS,True],
-             [COUNT_PAST_TENSE_VERBS,True],
+             [COUNT_PAST_TENSE_VERBS,False],
              [COUNT_FUTURE_TENSE_VERBS,True],
              [COUNT_COMMAS,False],
              [COUNT_COLONS_SEMICOLONS,False],

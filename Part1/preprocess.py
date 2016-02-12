@@ -8,8 +8,15 @@ def preprocess(data):
     
     for i in range(len(data)):
         data[i] =  data[i].split(",")
+
+        #If there is a comma in the tweet, this will fix it
+        tweet = ""
+        for j in range (5,len(data[i])-1):
+            tweet = tweet + data[i][j] +","
+
+        tweet = tweet + data[i][-1]
         #Get rid of the quotation marks surrounding the tweet
-        tweet = data[i][-1].strip().strip('"')
+        tweet = tweet.strip().strip('"')
 
         #remove html tags
         tweet = re.sub(r'"<[^>]*>' ,"", tweet)  

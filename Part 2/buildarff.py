@@ -29,11 +29,13 @@ def main(argv):
     #up of a list of strings (sentences)
     # data = [["this is a tweet. \n", "this is the same tweet"], ["This is a new tweet \n"]]
     for line in tweet_information:
-        if re.search(r'<A=[0,2,4]', line):
+        if re.search(r'<A=[0,4]', line):
             data.append(tweet)
             tweet = []
             
         tweet.append(line)
+        
+    data.append(tweet)
 
     #Extract the desired features
     results = feature_extract.extract(data[1:],maximum_number)
@@ -47,5 +49,5 @@ def main(argv):
     output_file.close()
 
 if __name__ == "__main__":
-    main(["data/Testing_Results.txt","data/feature_results.arff"]) #hardcoded arguements
+    main(["data/Testing_Results.txt","data/feature_results_testing.arff"]) #hardcoded arguements
     #main(sys.argv[1:]) # command line arguements 
