@@ -1,0 +1,25 @@
+Below is a table with the training classification
+rate and testing classification rate for a 
+Support Vector Machine classifier with different
+amounts of data.
+
+n 	|	instances |	training rate |	testing rate
+---------------------------------------------
+500	|	1000	  |		61.2%	  | 51.532%	
+1000|	2000	  |		62.7%	  |	53.4819%
+1500|	3000	  |		62.133	  |	54.3175%
+2000|	4000	  |		61.625%	  |	53.4819%
+2500|	5000	  |		61.8%	  |	54.039%
+3000|	6000	  |		61.2667%  |	55.1532%
+3500|	7000	  |		61.4571%  |	54.8747%
+4000|	8000	  |		61.8125%  |	55.7103%
+4500|	9000	  |		62.0333%  |	55.1532%
+5000|	10000	  |		61.53%	  |	54.8747%
+5500|	11000	  |		61.4636%  |	54.8747%
+
+The table above shows that by increasing the amount of
+data that the classifier is trained on, the classification
+rate for the test set also increases. The reason for this
+is because as more data is used the model becomes more
+generalized. The classification rate does fluctuate a tiny
+amount, but not signficantly, and the overall trend has the classification rate increasing with the amount of data.  

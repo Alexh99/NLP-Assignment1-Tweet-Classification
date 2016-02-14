@@ -1,0 +1,388 @@
+Below is the information gain attribute 
+selector for different amounts of training data. 
+The number of second person pronouns is always an 
+important feature no matter the amount of data used.
+One reason for this could be because people could be 
+using second person pronouns when they are upset.
+i.e saying things like: "You suck!", "I hate you!" etc. 
+
+## n = 500
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.02132    2 secondPersonCount
+ 0.00949    8 colonCount
+ 0.00729   16 slangCount
+ 0          6 futureTenseVerbCount
+ 0          9 dashCount
+ 0          7 commaCount
+ 0          3 thirdPersonCount
+ 0          1 firstPersonCount
+ 0          5 pastTenseVerbCount
+ 0          4 conjuctionCount
+ 0         17 upperCaseWordsCount
+ 0         15 whWordsCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         19 avgTokenLength
+ 0         11 ellipsesCount
+ 0         10 parenthesesCount
+ 0         14 adverbsCount
+ 0         12 commonNounsCount
+ 0         13 properNounsCount
+
+Selected attributes: 2,8,16,6,9,7,3,1,5,4,17,15,20,18,19,11,10,14,12,13 : 20
+
+
+## n = 1000
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.02146    2 secondPersonCount
+ 0.00754    1 firstPersonCount
+ 0.00696    8 colonCount
+ 0.00546    5 pastTenseVerbCount
+ 0.00452   14 adverbsCount
+ 0          9 dashCount
+ 0          7 commaCount
+ 0          3 thirdPersonCount
+ 0          6 futureTenseVerbCount
+ 0          4 conjuctionCount
+ 0         17 upperCaseWordsCount
+ 0         16 slangCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         19 avgTokenLength
+ 0         11 ellipsesCount
+ 0         10 parenthesesCount
+ 0         15 whWordsCount
+ 0         12 commonNounsCount
+ 0         13 properNounsCount
+
+Selected attributes: 2,1,8,5,14,9,7,3,6,4,17,16,20,18,19,11,10,15,12,13 : 20
+
+
+## n = 1500
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.01574    2 secondPersonCount
+ 0.00759    5 pastTenseVerbCount
+ 0.00749    8 colonCount
+ 0.00514    1 firstPersonCount
+ 0.00355   14 adverbsCount
+ 0.00341   13 properNounsCount
+ 0.00334   16 slangCount
+ 0          7 commaCount
+ 0          3 thirdPersonCount
+ 0          4 conjuctionCount
+ 0          6 futureTenseVerbCount
+ 0         18 avgSentenceLength
+ 0         17 upperCaseWordsCount
+ 0         20 numOfSentences
+ 0         19 avgTokenLength
+ 0         10 parenthesesCount
+ 0          9 dashCount
+ 0         15 whWordsCount
+ 0         11 ellipsesCount
+ 0         12 commonNounsCount
+
+Selected attributes: 2,5,8,1,14,13,16,7,3,4,6,18,17,20,19,10,9,15,11,12 : 20
+
+
+## n = 2000
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.01665    2 secondPersonCount
+ 0.00664    8 colonCount
+ 0.00609    5 pastTenseVerbCount
+ 0.00567    1 firstPersonCount
+ 0.00436   19 avgTokenLength
+ 0.00357   14 adverbsCount
+ 0.00331   13 properNounsCount
+ 0.00305   16 slangCount
+ 0.00233    9 dashCount
+ 0          3 thirdPersonCount
+ 0          4 conjuctionCount
+ 0          7 commaCount
+ 0          6 futureTenseVerbCount
+ 0         17 upperCaseWordsCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         11 ellipsesCount
+ 0         10 parenthesesCount
+ 0         15 whWordsCount
+ 0         12 commonNounsCount
+
+Selected attributes: 2,8,5,1,19,14,13,16,9,3,4,7,6,17,20,18,11,10,15,12 : 20
+
+
+## n = 2500
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.01924    2 secondPersonCount
+ 0.00744    5 pastTenseVerbCount
+ 0.00584    1 firstPersonCount
+ 0.0051     8 colonCount
+ 0.00481   19 avgTokenLength
+ 0.00464   14 adverbsCount
+ 0.00398   13 properNounsCount
+ 0.00246   16 slangCount
+ 0.00234    9 dashCount
+ 0.00157    7 commaCount
+ 0          3 thirdPersonCount
+ 0          4 conjuctionCount
+ 0          6 futureTenseVerbCount
+ 0         17 upperCaseWordsCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         11 ellipsesCount
+ 0         10 parenthesesCount
+ 0         15 whWordsCount
+ 0         12 commonNounsCount
+
+Selected attributes: 2,5,1,8,19,14,13,16,9,7,3,4,6,17,20,18,11,10,15,12 : 20
+
+
+## n = 3000
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.01582    2 secondPersonCount
+ 0.00819    5 pastTenseVerbCount
+ 0.00692    1 firstPersonCount
+ 0.00614   14 adverbsCount
+ 0.00463   19 avgTokenLength
+ 0.00422    8 colonCount
+ 0.00306   13 properNounsCount
+ 0.00239    9 dashCount
+ 0.00168    7 commaCount
+ 0.00147   11 ellipsesCount
+ 0.00104    6 futureTenseVerbCount
+ 0          4 conjuctionCount
+ 0          3 thirdPersonCount
+ 0         17 upperCaseWordsCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         12 commonNounsCount
+ 0         10 parenthesesCount
+ 0         16 slangCount
+ 0         15 whWordsCount
+
+Selected attributes: 2,5,1,14,19,8,13,9,7,11,6,4,3,17,20,18,12,10,16,15 : 20
+
+
+## n = 3500
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.01637    2 secondPersonCount
+ 0.0072     5 pastTenseVerbCount
+ 0.00571    1 firstPersonCount
+ 0.00563   19 avgTokenLength
+ 0.00543   14 adverbsCount
+ 0.00373    8 colonCount
+ 0.00367   13 properNounsCount
+ 0.00227    9 dashCount
+ 0.00192    7 commaCount
+ 0.0014    11 ellipsesCount
+ 0.00133    6 futureTenseVerbCount
+ 0          4 conjuctionCount
+ 0          3 thirdPersonCount
+ 0         17 upperCaseWordsCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         12 commonNounsCount
+ 0         10 parenthesesCount
+ 0         16 slangCount
+ 0         15 whWordsCount
+
+Selected attributes: 2,5,1,19,14,8,13,9,7,11,6,4,3,17,20,18,12,10,16,15 : 20
+
+## n = 4000
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.01816    2 secondPersonCount
+ 0.00701    1 firstPersonCount
+ 0.00682    5 pastTenseVerbCount
+ 0.00645   14 adverbsCount
+ 0.00621   19 avgTokenLength
+ 0.00311    8 colonCount
+ 0.00293   13 properNounsCount
+ 0.0027     7 commaCount
+ 0.00233    9 dashCount
+ 0.0017    11 ellipsesCount
+ 0.00119    6 futureTenseVerbCount
+ 0          4 conjuctionCount
+ 0          3 thirdPersonCount
+ 0         17 upperCaseWordsCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         12 commonNounsCount
+ 0         10 parenthesesCount
+ 0         16 slangCount
+ 0         15 whWordsCount
+
+Selected attributes: 2,1,5,14,19,8,13,7,9,11,6,4,3,17,20,18,12,10,16,15 : 20
+
+## n = 4500
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.02072     2 secondPersonCount
+ 0.007697   19 avgTokenLength
+ 0.007109    1 firstPersonCount
+ 0.007048    5 pastTenseVerbCount
+ 0.006907   14 adverbsCount
+ 0.003771    8 colonCount
+ 0.002698   13 properNounsCount
+ 0.002336    9 dashCount
+ 0.001943   11 ellipsesCount
+ 0.001501    7 commaCount
+ 0.001282    6 futureTenseVerbCount
+ 0.000705    4 conjuctionCount
+ 0           3 thirdPersonCount
+ 0          17 upperCaseWordsCount
+ 0          20 numOfSentences
+ 0          18 avgSentenceLength
+ 0          12 commonNounsCount
+ 0          10 parenthesesCount
+ 0          16 slangCount
+ 0          15 whWordsCount
+
+Selected attributes: 2,19,1,5,14,8,13,9,11,7,6,4,3,17,20,18,12,10,16,15 : 20
+
+## n = 5000
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.020177    2 secondPersonCount
+ 0.007399   19 avgTokenLength
+ 0.007368    5 pastTenseVerbCount
+ 0.00643    14 adverbsCount
+ 0.006123    1 firstPersonCount
+ 0.00325     8 colonCount
+ 0.002661   13 properNounsCount
+ 0.002076    7 commaCount
+ 0.002043    9 dashCount
+ 0.00167    11 ellipsesCount
+ 0.00141     6 futureTenseVerbCount
+ 0.000789   10 parenthesesCount
+ 0           3 thirdPersonCount
+ 0           4 conjuctionCount
+ 0          20 numOfSentences
+ 0          18 avgSentenceLength
+ 0          15 whWordsCount
+ 0          12 commonNounsCount
+ 0          17 upperCaseWordsCount
+ 0          16 slangCount
+
+Selected attributes: 2,19,5,14,1,8,13,7,9,11,6,10,3,4,20,18,15,12,17,16 : 20
+
+## n = 5500
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.02093    2 secondPersonCount
+ 0.00723   19 avgTokenLength
+ 0.0069     5 pastTenseVerbCount
+ 0.00684   14 adverbsCount
+ 0.00629    1 firstPersonCount
+ 0.00336   13 properNounsCount
+ 0.00321    8 colonCount
+ 0.00182    9 dashCount
+ 0.00173   11 ellipsesCount
+ 0.00157    7 commaCount
+ 0.00147    6 futureTenseVerbCount
+ 0.00105   10 parenthesesCount
+ 0          3 thirdPersonCount
+ 0          4 conjuctionCount
+ 0         20 numOfSentences
+ 0         18 avgSentenceLength
+ 0         15 whWordsCount
+ 0         12 commonNounsCount
+ 0         17 upperCaseWordsCount
+ 0         16 slangCount
+
+Selected attributes: 2,19,5,14,1,13,8,9,11,7,6,10,3,4,20,18,15,12,17,16 : 20
+

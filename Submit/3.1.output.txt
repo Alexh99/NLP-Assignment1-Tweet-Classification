@@ -1,0 +1,37 @@
+The classification accuracy on the test data were
+as follows: 
+
+Support Vector Machines: 	54.8747 %
+Naive Bayes: 				54.039  %
+Decision Trees: 			53.7604 %
+
+The Support Vector Machine classifier performed
+the best on the test set. Below is the output 
+of WEKA: 
+
+Time taken to build model: 1.63 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6761               61.4636 %
+Incorrectly Classified Instances      4239               38.5364 %
+Kappa statistic                          0.2293
+Mean absolute error                      0.3854
+Root mean squared error                  0.6208
+Relative absolute error                 77.0727 %
+Root relative squared error            124.1553 %
+Total Number of Instances            11000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         197               54.8747 %
+Incorrectly Classified Instances       162               45.1253 %
+Kappa statistic                          0.0965
+Mean absolute error                      0.4513
+Root mean squared error                  0.6718
+Relative absolute error                 90.2507 %
+Root relative squared error            134.3508 %
+Total Number of Instances              359     
+ 

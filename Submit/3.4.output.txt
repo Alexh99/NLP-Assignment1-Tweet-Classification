@@ -1,0 +1,261 @@
+The p-values between the classes are: 
+
+p-value with SVMs and Naive Bayes:
+0.084717191325172206
+
+p-value with decision trees and SVMs:
+3.1040794145841184e-05
+
+p-value with decision trees and Naive Bayes:
+0.00056858140695319334
+
+The above p-values show that the SVM and Naive 
+Bayes classifer are significantly different than
+the decision tree classifier.
+
+Below are the accuracies, precisions (for positive/negative), and recall (for positive/negative), for the 10 partitions used in
+cross-fold validation for each of the three different
+classifiers
+
+###################
+###################
+##				 ##
+##     SVM's     ##
+##				 ##
+###################
+###################
+
+Partition: 1
+Accuracy: 0.601818181818
+Precision Positive: 0.627272727273
+Precision Negative: 0.584848484848
+Recall Positive: 0.501818181818
+Recall Negative: 0.701818181818
+
+Partition: 2
+Accuracy: 0.622727272727
+Precision Positive: 0.649006622517
+Precision Negative: 0.604327666151
+Recall Positive: 0.534545454545
+Recall Negative: 0.710909090909
+
+Partition: 3
+Accuracy: 0.601818181818
+Precision Positive: 0.622807017544
+Precision Negative: 0.586956521739
+Recall Positive: 0.516363636364
+Recall Negative: 0.687272727273
+
+Partition: 4
+Accuracy: 0.614545454545
+Precision Positive: 0.647887323944
+Precision Negative: 0.593471810089
+Recall Positive: 0.501818181818
+Recall Negative: 0.727272727273
+
+Partition: 5
+Accuracy: 0.598181818182
+Precision Positive: 0.622727272727
+Precision Negative: 0.581818181818
+Recall Positive: 0.498181818182
+Recall Negative: 0.698181818182
+
+Partition: 6
+Accuracy: 0.616363636364
+Precision Positive: 0.653846153846
+Precision Negative: 0.593567251462
+Recall Positive: 0.494545454545
+Recall Negative: 0.738181818182
+
+Partition: 7
+Accuracy: 0.633636363636
+Precision Positive: 0.664429530201
+Precision Negative: 0.612557427259
+Recall Positive: 0.54
+Recall Negative: 0.727272727273
+
+Partition: 8
+Accuracy: 0.653636363636
+Precision Positive: 0.684901531729
+Precision Negative: 0.631415241058
+Recall Positive: 0.569090909091
+Recall Negative: 0.738181818182
+
+Partition: 9
+Accuracy: 0.600909090909
+Precision Positive: 0.636363636364
+Precision Negative: 0.580086580087
+Recall Positive: 0.470909090909
+Recall Negative: 0.730909090909
+
+Partition: 10
+Accuracy: 0.59
+Precision Positive: 0.61757719715
+Precision Negative: 0.572901325479
+Recall Positive: 0.472727272727
+Recall Negative: 0.707272727273
+
+p-value with naive bayes: 0.084717191325172206
+p-value with decision trees: 3.1040794145841184e-05
+
+###################
+###################
+##				 ##
+##  Naive Bayes  ##
+##				 ##
+###################
+###################
+
+Partition: 1
+Accuracy: 0.600909090909
+Precision Positive: 0.625850340136
+Precision Negative: 0.584218512898
+Recall Positive: 0.501818181818
+Recall Negative: 0.7
+
+Partition: 2
+Accuracy: 0.622727272727
+Precision Positive: 0.66265060241
+Precision Negative: 0.598540145985
+Recall Positive: 0.5
+Recall Negative: 0.745454545455
+
+Partition: 3
+Accuracy: 0.586363636364
+Precision Positive: 0.612293144208
+Precision Negative: 0.570162481536
+Recall Positive: 0.470909090909
+Recall Negative: 0.701818181818
+
+Partition: 4
+Accuracy: 0.592727272727
+Precision Positive: 0.625
+Precision Negative: 0.573699421965
+Recall Positive: 0.463636363636
+Recall Negative: 0.721818181818
+
+Partition: 5
+Accuracy: 0.601818181818
+Precision Positive: 0.636585365854
+Precision Negative: 0.58115942029
+Recall Positive: 0.474545454545
+Recall Negative: 0.729090909091
+
+Partition: 6
+Accuracy: 0.609090909091
+Precision Positive: 0.642857142857
+Precision Negative: 0.588235294118
+Recall Positive: 0.490909090909
+Recall Negative: 0.727272727273
+
+Partition: 7
+Accuracy: 0.610909090909
+Precision Positive: 0.644549763033
+Precision Negative: 0.589970501475
+Recall Positive: 0.494545454545
+Recall Negative: 0.727272727273
+
+Partition: 8
+Accuracy: 0.625454545455
+Precision Positive: 0.654017857143
+Precision Negative: 0.605828220859
+Recall Positive: 0.532727272727
+Recall Negative: 0.718181818182
+
+Partition: 9
+Accuracy: 0.606363636364
+Precision Positive: 0.655172413793
+Precision Negative: 0.580912863071
+Recall Positive: 0.449090909091
+Recall Negative: 0.763636363636
+
+Partition: 10
+Accuracy: 0.597272727273
+Precision Positive: 0.6276849642
+Precision Negative: 0.578560939794
+Recall Positive: 0.478181818182
+Recall Negative: 0.716363636364
+
+p-value with SVM: 0.084717191325172206
+p-value with decision trees: 0.00056858140695319334
+
+######################
+######################
+##				    ##
+##  Decision Trees  ##
+##				    ##
+######################
+######################
+
+Partition: 1
+Accuracy: 0.574545454545
+Precision Positive: 0.575925925926
+Precision Negative: 0.573214285714
+Recall Positive: 0.565454545455
+Recall Negative: 0.583636363636
+
+Partition: 2
+Accuracy: 0.567272727273
+Precision Positive: 0.572834645669
+Precision Negative: 0.5625
+Recall Positive: 0.529090909091
+Recall Negative: 0.605454545455
+
+Partition: 3
+Accuracy: 0.579090909091
+Precision Positive: 0.587174348697
+Precision Negative: 0.57237936772
+Recall Positive: 0.532727272727
+Recall Negative: 0.625454545455
+
+Partition: 4
+Accuracy: 0.588181818182
+Precision Positive: 0.591337099812
+Precision Negative: 0.585237258348
+Recall Positive: 0.570909090909
+Recall Negative: 0.605454545455
+
+Partition: 5
+Accuracy: 0.576363636364
+Precision Positive: 0.581081081081
+Precision Negative: 0.572164948454
+Recall Positive: 0.547272727273
+Recall Negative: 0.605454545455
+
+Partition: 6
+Accuracy: 0.544545454545
+Precision Positive: 0.550308008214
+Precision Negative: 0.539967373573
+Recall Positive: 0.487272727273
+Recall Negative: 0.601818181818
+
+Partition: 7
+Accuracy: 0.572727272727
+Precision Positive: 0.574074074074
+Precision Negative: 0.571428571429
+Recall Positive: 0.563636363636
+Recall Negative: 0.581818181818
+
+Partition: 8
+Accuracy: 0.606363636364
+Precision Positive: 0.606557377049
+Precision Negative: 0.606170598911
+Recall Positive: 0.605454545455
+Recall Negative: 0.607272727273
+
+Partition: 9
+Accuracy: 0.553636363636
+Precision Positive: 0.558185404339
+Precision Negative: 0.549747048904
+Recall Positive: 0.514545454545
+Recall Negative: 0.592727272727
+
+Partition: 10
+Accuracy: 0.549090909091
+Precision Positive: 0.551136363636
+Precision Negative: 0.547202797203
+Recall Positive: 0.529090909091
+Recall Negative: 0.569090909091
+
+p-value with SVM: 3.1040794145841184e-05
+p-value with naive bayes: 0.00056858140695319334
