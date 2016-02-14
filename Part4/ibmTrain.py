@@ -115,16 +115,19 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
                 "name": "Classifier {0}".format(n)
             }
 
-            r = requests.post(
-                'https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers',
-                auth=HTTPBasicAuth(username, password),
-                files={
-                    'training_data': (filename, f)
-                },
-                data={
-                    'training_metadata': json.dumps(training_metadata)
-                }
-            )
+            try:
+                r = requests.post(
+                    'https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers',
+                    auth=HTTPBasicAuth(username, password),
+                    files={
+                        'training_data': (filename, f)
+                    },
+                    data={
+                        'training_metadata': json.dumps(training_metadata)
+                    }
+                )
+            except requests.exceptions.RequestException as e:
+                raise TrainingException("Requests error: {0}".format(e))
 
             if r.status_code != 200:
                 raise TrainingException("Error creating classifier '{0}' (Code: {1})".format(filename, r.status_code))
