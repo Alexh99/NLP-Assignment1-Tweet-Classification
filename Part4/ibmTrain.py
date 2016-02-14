@@ -108,6 +108,7 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
     #
 
     filename = "{0}{1}.csv".format(input_file_prefix, n)
+    response = None
     try:
         with open(filename, 'r') as f:
             training_metadata = {
@@ -132,13 +133,16 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
             if r.status_code != 200:
                 raise TrainingException("Error creating classifier '{0}' (Code: {1})".format(filename, r.status_code))
             else:
-                classifier_id = r.json()['classifier_id']
+                response_dict = r.json()
+                classifier_id = response_dict['classifier_id']
                 print "Created classifier '{0}' (Code: {1}) - ID: {2}".format(filename, r.status_code, classifier_id)
 
     except IOError:
         raise TrainingException("Error opening file '{0}'".format(filename))
 
-    return
+    # Set the "response code" and return it, according to the specification
+    response_dict['response_code'] = r.status_code
+    return response_dict
         
 if __name__ == "__main__":
         
