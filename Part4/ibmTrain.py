@@ -11,10 +11,13 @@
 #
 
 ###IMPORTS###################################
-import csv, requests, json
+import csv, requests, json, sys
 from requests.auth import HTTPBasicAuth
 
 ###HELPER FUNCTIONS##########################
+
+class TrainingException(Exception):
+    """Exception raised when there is an issue training a classifier"""
 
 def convert_training_csv_to_watson_csv_format(input_csv_name, group_id, output_csv_name): 
 # Converts an existing training csv file. The output file should
@@ -105,28 +108,32 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
     #
 
     filename = "{0}{1}.csv".format(input_file_prefix, n)
-    with open(filename, 'r') as f:
-        training_metadata = {
-            "language": "en",
-            "name": "Classifier {0}".format(n)
-        }
-
-        r = requests.post(
-            'https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers',
-            auth=HTTPBasicAuth(username, password),
-            files={
-                'training_data': (filename, f)
-            },
-            data={
-                'training_metadata': json.dumps(training_metadata)
+    try:
+        with open(filename, 'r') as f:
+            training_metadata = {
+                "language": "en",
+                "name": "Classifier {0}".format(n)
             }
-        )
 
-        if r.status_code != 200:
-            print "Error creating classifier '{0}' (Code: {1})".format(filename, r.status_code)
-        else:
-            classifier_id = r.json()['classifier_id']
-            print "Created classifier '{0}' (Code: {1}) - ID: {2}".format(filename, r.status_code, classifier_id)
+            r = requests.post(
+                'https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers',
+                auth=HTTPBasicAuth(username, password),
+                files={
+                    'training_data': (filename, f)
+                },
+                data={
+                    'training_metadata': json.dumps(training_metadata)
+                }
+            )
+
+            if r.status_code != 200:
+                raise TrainingException("Error creating classifier '{0}' (Code: {1})".format(filename, r.status_code))
+            else:
+                classifier_id = r.json()['classifier_id']
+                print "Created classifier '{0}' (Code: {1}) - ID: {2}".format(filename, r.status_code, classifier_id)
+
+    except IOError:
+        raise TrainingException("Error opening file '{0}'".format(filename))
 
     return
         
@@ -149,6 +156,10 @@ if __name__ == "__main__":
     ### STEP 3: Create the classifiers using Watson
     username = 'USERNAME'
     password = 'PASSWORD'
-    create_classifier(username, password, 500)
-    create_classifier(username, password, 2500)
-    create_classifier(username, password, 5000)
+    try:
+        create_classifier(username, password, 500)
+        create_classifier(username, password, 2500)
+        create_classifier(username, password, 5000)
+
+    except TrainingException as e:
+        sys.exit(e)
