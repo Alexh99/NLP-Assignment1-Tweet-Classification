@@ -11,7 +11,7 @@
 #
 
 ###IMPORTS###################################
-import csv, requests, json, sys, urllib
+import csv, requests, json, sys
 from requests.auth import HTTPBasicAuth
 
 ###HELPER FUNCTIONS##########################
