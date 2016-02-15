@@ -365,6 +365,7 @@ def get_classifier_name_key(classifier_name_tuple):
 	# Inputs:
 	#	classifier_name_tuple - A tuple with classifier name and some value (accuracy or confidence)
 	# 		ex. (u'Classifier 500', 0.99)
+	# 
 	# Returns:
 	# 	The value to use when sorting (the classifier's training data set size), ex. 500
 	# 
@@ -393,7 +394,7 @@ if __name__ == "__main__":
 			accuracy = compute_accuracy_of_single_classifier(classification, input_test_data)
 			accuracies[classifier_name] = accuracy
 
-		#STEP 4: Compute the confidence of each class for each classifier
+		#STEP 4: Compute the average confidence for correct/incorrect classifications (for each classifier)
 		confidences = {}
 		for classifier_name, classification in classifications.iteritems():
 			correct_confidence, incorrect_confidence = compute_average_confidence_of_single_classifier(classification, input_test_data)
