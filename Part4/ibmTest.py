@@ -16,6 +16,9 @@ import requests, sys, csv, urllib
 from requests.auth import HTTPBasicAuth
 from collections import OrderedDict
 
+# Supress InsecurePlatformWarning/SNIMissingWarning, etc. on CDF
+requests.packages.urllib3.disable_warnings()
+
 class TestingException(Exception):
 	"""Exception raised when there is an issue testing a classifier"""
 

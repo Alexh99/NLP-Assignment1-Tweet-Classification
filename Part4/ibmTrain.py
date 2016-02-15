@@ -14,6 +14,9 @@
 import csv, requests, json, sys
 from requests.auth import HTTPBasicAuth
 
+# Supress InsecurePlatformWarning/SNIMissingWarning, etc. on CDF
+requests.packages.urllib3.disable_warnings()
+
 ###HELPER FUNCTIONS##########################
 
 class TrainingException(Exception):
