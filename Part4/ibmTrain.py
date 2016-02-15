@@ -172,4 +172,4 @@ if __name__ == "__main__":
 		create_classifier(username, password, 5000)
 
 	except TrainingException as e:
-		sys.exit(e)
+		sys.exit("Caught an exception: {0}".format(e))

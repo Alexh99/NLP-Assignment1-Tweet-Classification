@@ -418,6 +418,6 @@ if __name__ == "__main__":
 				f.write("{0}: {1} when correct, {2} when incorrect\n".format(classifier_name, correct_confidence, incorrect_confidence))
 
 	except TestingException as e:
-		sys.exit(e)
+		sys.exit("Caught an exception: {0}".format(e))
 	except IOError:
 		raise TestingException("Error writing to '{0}'".format(output_file))
