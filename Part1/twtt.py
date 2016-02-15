@@ -15,7 +15,7 @@ def main(argv):
     input_file.close()
     
     if (len(argv) == 3):                    #Optional arguement               
-        group_number = argv[1]
+        group_number = int(argv[1])
 
         #TODO: Make 5500 and 800,000 constants?
         first_half = data[group_number * 5500 : (group_number + 1) * 5500]

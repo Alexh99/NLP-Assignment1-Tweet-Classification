@@ -20,7 +20,7 @@ def main(argv):
 
     #Optional arguement used to request maximum number of examples
     if (len(argv) == 3):                                
-        maximum_number = argv[2]
+        maximum_number = int(argv[2])
 
     data = []
     tweet = []

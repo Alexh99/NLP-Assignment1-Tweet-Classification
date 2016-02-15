@@ -1,0 +1,25 @@
+@RELATION tweet
+
+@ATTRIBUTE firstPersonCount	NUMERIC
+@ATTRIBUTE secondPersonCount	NUMERIC
+@ATTRIBUTE thirdPersonCount	NUMERIC
+@ATTRIBUTE conjuctionCount	NUMERIC
+@ATTRIBUTE pastTenseVerbCount	NUMERIC
+@ATTRIBUTE futureTenseVerbCount	NUMERIC
+@ATTRIBUTE commaCount		NUMERIC
+@ATTRIBUTE colonCount		NUMERIC
+@ATTRIBUTE dashCount		NUMERIC
+@ATTRIBUTE parenthesesCount	NUMERIC
+@ATTRIBUTE ellipsesCount	NUMERIC
+@ATTRIBUTE commonNounsCount	NUMERIC
+@ATTRIBUTE properNounsCount	NUMERIC
+@ATTRIBUTE adverbsCount		NUMERIC
+@ATTRIBUTE whWordsCount		NUMERIC
+@ATTRIBUTE slangCount		NUMERIC
+@ATTRIBUTE upperCaseWordsCount	NUMERIC
+@ATTRIBUTE avgSentenceLength	NUMERIC
+@ATTRIBUTE avgTokenLength	NUMERIC
+@ATTRIBUTE numOfSentences	NUMERIC
+@ATTRIBUTE class        {0,4}
+
+@data

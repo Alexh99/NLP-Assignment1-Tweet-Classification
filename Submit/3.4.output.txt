@@ -10,7 +10,7 @@ p-value with decision trees and Naive Bayes:
 0.00056858140695319334
 
 The above p-values show that the SVM and Naive 
-Bayes classifer are significantly different than
+Bayes classifier  are significantly different than
 the decision tree classifier.
 
 Below are the accuracies, precisions (for positive/negative), and recall (for positive/negative), for the 10 partitions used in

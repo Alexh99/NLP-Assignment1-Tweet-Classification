@@ -1,10 +1,10 @@
-We decided to test how other classifers performed on the data
+We decided to test how other classifiers performed on the data
 sets using WEKA. Below are the performances of a K-nearest neighbour
-classifer and a Neural Network classifer with varying parameters. 
-Both of these classifers (with the correct parameters) performed better 
+classifier  and a Neural Network classifier  with varying parameters. 
+Both of these classifiers (with the correct parameters) performed better 
 than the three classifiers we used in part 3.
 
-The following table shows the results of a K-nearest neighbour classifer
+The following table shows the results of a K-nearest neighbour classifier 
 with varying values for k. When k = 1, the classifier does not perform as well
 as higher values of k, because the model is not as generalized. When k=3, the 
 model performs the best on the test data. Higher values of k decrease the classification
@@ -18,7 +18,7 @@ rate because it generalizes the training data too much.
 	7	|			69.3			|		54.3175			|
 	
 
-The following table shows the results of a Nerual Network classifer
+The following table shows the results of a Neural  Network classifier
 with varying values for the learning rate. The learning rate that performed
 the best on the test data was when L = 0.2. Low values for the learning rate
 make the classifier not reach the optimum value before the algorithm finishes,
@@ -32,8 +32,8 @@ while high values of the learning rate can cause overfitting.
 	    0.4			|			62.6455			|		57.1031			|
 	    0.5			|			62.5			|		51.8106			|
 		
-Below is the ouput from WEKA for the kNN classifier using k=3, and the Neural Network 
-classifer using a learning rate of 0.2:
+Below is the output from WEKA for the kNN classifier using k=3, and the Neural Network 
+classifier using a learning rate of 0.2:
 
 ###########
 ##		 ##

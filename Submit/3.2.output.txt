@@ -22,4 +22,4 @@ data that the classifier is trained on, the classification
 rate for the test set also increases. The reason for this
 is because as more data is used the model becomes more
 generalized. The classification rate does fluctuate a tiny
-amount, but not signficantly, and the overall trend has the classification rate increasing with the amount of data.  
+amount, but not significantly, and the overall trend has the classification rate increasing with the amount of data.  
