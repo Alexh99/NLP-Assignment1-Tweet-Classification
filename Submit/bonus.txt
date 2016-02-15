@@ -1,0 +1,99 @@
+We decided to test how other classifers performed on the data
+sets using WEKA. Below are the performances of a K-nearest neighbour
+classifer and a Neural Network classifer with varying parameters. 
+Both of these classifers (with the correct parameters) performed better 
+than the three classifiers we used in part 3.
+
+The following table shows the results of a K-nearest neighbour classifer
+with varying values for k. When k = 1, the classifier does not perform as well
+as higher values of k, because the model is not as generalized. When k=3, the 
+model performs the best on the test data. Higher values of k decrease the classification
+rate because it generalizes the training data too much.
+
+	k	|	Training Classification	|	Test Classification	|
+-------------------------------------------------------------
+	1	|			97.8364			|		53.7604			|
+	3	|			76.3091			|		56.2674			|
+	5	|			71.1182			|		55.9889			|
+	7	|			69.3			|		54.3175			|
+	
+
+The following table shows the results of a Nerual Network classifer
+with varying values for the learning rate. The learning rate that performed
+the best on the test data was when L = 0.2. Low values for the learning rate
+make the classifier not reach the optimum value before the algorithm finishes,
+while high values of the learning rate can cause overfitting. 
+
+	Learning rate	|	Training Classification	|	Test Classification	|
+---------------------------------------------------------------------------
+		0.1			|			63.1455			|		55.9889			|
+		0.2 		|			63.4545			|		57.3816			|
+		0.3         |			63.3273			|		55.9889			|
+	    0.4			|			62.6455			|		57.1031			|
+	    0.5			|			62.5			|		51.8106			|
+		
+Below is the ouput from WEKA for the kNN classifier using k=3, and the Neural Network 
+classifer using a learning rate of 0.2:
+
+###########
+##		 ##
+##  KNN	 ##
+##		 ##
+###########
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 13.77 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        8394               76.3091 %
+Incorrectly Classified Instances      2606               23.6909 %
+Kappa statistic                          0.5262
+Mean absolute error                      0.3093
+Root mean squared error                  0.3943
+Relative absolute error                 61.8679 %
+Root relative squared error             78.868  %
+Total Number of Instances            11000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         202               56.2674 %
+Incorrectly Classified Instances       157               43.7326 %
+Kappa statistic                          0.124 
+Mean absolute error                      0.4686
+Root mean squared error                  0.5556
+Relative absolute error                 93.7237 %
+Root relative squared error            111.1191 %
+Total Number of Instances              359  
+
+###########
+##		 ##
+##  NN	 ##
+##		 ##
+###########  
+
+ Time taken to build model: 49.01 seconds
+Time taken to test model on training data: 0.18 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6980               63.4545 %
+Incorrectly Classified Instances      4020               36.5455 %
+Kappa statistic                          0.2691
+Mean absolute error                      0.4509
+Root mean squared error                  0.4738
+Relative absolute error                 90.1813 %
+Root relative squared error             94.7627 %
+Total Number of Instances            11000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         206               57.3816 %
+Incorrectly Classified Instances       153               42.6184 %
+Kappa statistic                          0.1474
+Mean absolute error                      0.4824
+Root mean squared error                  0.5076
+Relative absolute error                 96.4785 %
+Root relative squared error            101.5179 %
+Total Number of Instances              359     
