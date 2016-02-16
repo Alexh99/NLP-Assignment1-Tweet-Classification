@@ -413,14 +413,14 @@ if __name__ == "__main__":
 			# Sort so that they're printed in the right order
 			ordered_accuracies = OrderedDict(sorted(accuracies.items(), key=get_classifier_name_key))
 			for classifier_name, accuracy in ordered_accuracies.iteritems():
-				f.write("{0}: {1}\n".format(classifier_name, accuracy))
+				f.write("{0}:\n\t{1}\n".format(classifier_name, accuracy))
 			
 			f.write('\n-----------------------\n')
 			f.write('4.4 Average Confidence\n')
 			f.write('-----------------------\n')
 			ordered_confidences = OrderedDict(sorted(confidences.items(), key=get_classifier_name_key))
 			for classifier_name, (correct_confidence, incorrect_confidence) in ordered_confidences.iteritems():
-				f.write("{0}: {1} when correct, {2} when incorrect\n".format(classifier_name, correct_confidence, incorrect_confidence))
+				f.write("{0}:\n\t{1} when correct,\n\t{2} when incorrect\n".format(classifier_name, correct_confidence, incorrect_confidence))
 			f.write('\n-----------------------\n')
 			f.write('Discussion\n')
 			f.write('-----------------------\n')
