@@ -2,9 +2,11 @@ import re
 import wordlist
 import NLPlib
 
+
 def preprocess(data):
     
     final_result = ""
+    tagger = NLPlib.NLPlib()
     
     for i in range(len(data)):
         data[i] =  data[i].split(",")
@@ -69,7 +71,6 @@ def preprocess(data):
             
 
         #Call the tagger to get the parts of speech
-        tagger = NLPlib.NLPlib() 
         tags = tagger.tag(tweet_list)
 
         #Combine the words with the parts of speech, skip over newline characters
