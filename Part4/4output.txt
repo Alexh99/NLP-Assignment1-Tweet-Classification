@@ -37,8 +37,13 @@ makes use of "deep learning"). As with the results in 3.2,
 an increase in the amount of training data used appears to
 increase the effectiveness of the classifier. Increasing
 the amount of training data from 500 to 2500 samples
-resulted in an increase in accuracy from around 64.1% to
-73.5% - almost a 10% increase. There is a slight
+resulted in an increase in accuracy from around ~64.1% to
+~73.5% - almost a 10% increase. There is a slight
 fluctuation in the accuracy of Classifier 2500 and
 Classifier 5000, but they both have an accuracy around
-72% and 74%.
+~72% and ~74%.
+
+It's interesting to note that, on average, every
+classifier is about ~5% to ~7% more confident on
+classifications that it gets correct when compared to
+its confidence on classifications that are incorrect.
