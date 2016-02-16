@@ -424,7 +424,7 @@ if __name__ == "__main__":
 			f.write('\n-----------------------\n')
 			f.write('Discussion\n')
 			f.write('-----------------------\n')
-			f.write('<INSERT COMMENTS HERE>')
+			f.write('<INSERT COMMENTS HERE>\n')
 
 	except TestingException as e:
 		sys.exit("Caught an exception: {0}".format(e))
