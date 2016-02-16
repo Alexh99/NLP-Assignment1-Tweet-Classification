@@ -405,17 +405,26 @@ if __name__ == "__main__":
 
 		#WRITE TO FILE
 		with open(output_file, 'w') as f:
-			f.write("ACCURACY\n")
+			f.write('4 IBM Watson on BlueMix\n')
+			f.write('=======================\n')
+			f.write('-----------------------\n')
+			f.write('4.3 Accuracy\n')
+			f.write('-----------------------\n')
 			# Sort so that they're printed in the right order
 			ordered_accuracies = OrderedDict(sorted(accuracies.items(), key=get_classifier_name_key))
 			for classifier_name, accuracy in ordered_accuracies.iteritems():
 				f.write("{0}: {1}\n".format(classifier_name, accuracy))
 			
-			f.write("----------\n")
-			f.write("AVERAGE CONFIDENCE\n")
+			f.write('\n-----------------------\n')
+			f.write('4.4 Average Confidence\n')
+			f.write('-----------------------\n')
 			ordered_confidences = OrderedDict(sorted(confidences.items(), key=get_classifier_name_key))
 			for classifier_name, (correct_confidence, incorrect_confidence) in ordered_confidences.iteritems():
 				f.write("{0}: {1} when correct, {2} when incorrect\n".format(classifier_name, correct_confidence, incorrect_confidence))
+			f.write('\n-----------------------\n')
+			f.write('Discussion\n')
+			f.write('-----------------------\n')
+			f.write('<INSERT COMMENTS HERE>')
 
 	except TestingException as e:
 		sys.exit("Caught an exception: {0}".format(e))
