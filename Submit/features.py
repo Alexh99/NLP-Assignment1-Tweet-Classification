@@ -1,5 +1,5 @@
 #Each feature that we want to count is made up of a list of patterns to search for
-#some of the features are read in from files located in Wordlists/Wordlists,
+#some of the features are read in from files located in /u/cs401/Wordlists/,
 #other features are defined in this file.
 
 #The lists contain the regex pattern that will be searched for. To add a new feature

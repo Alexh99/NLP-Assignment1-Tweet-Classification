@@ -15,6 +15,7 @@ def preprocess(data):
             tweet = tweet + data[i][j] +","
 
         tweet = tweet + data[i][-1]
+        
         #Get rid of the quotation marks surrounding the tweet
         tweet = tweet.strip().strip('"')
 
